@@ -14,7 +14,7 @@ import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 const Layout = ({ children }) => {
     return (
         <Box sx={{ height: '100%', display: 'flex', width: '100%' }}>
-            <Stack sx={{ width: '20%', height: '100%', background: '#1B1C1E', padding: '30px' }}>
+            <Stack sx={{ position: 'fixed', top: 0, bottom: '0' , width: '20%', height: '100%', background: '#1B1C1E', padding: '30px' }}>
                 <Stack sx={{ justifyContent: 'flex-start', gap: '60px' }}>
                     <Box sx={{ width: '100px', height: '50px' }}>
                         <img style={{ width: '150px' }} src="/images/logo.png" alt="" />
@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
                     <Button sx={{ color: 'white', display: 'flex', alignItems: 'center', gap: '10px', fontSize: '14px', justifyContent: 'flex-start', marginTop: '160px' }}> <LogoutIcon sx={{ fontSize: '18px' }} /> Log out</Button>
                 </Stack>
             </Stack>
-            <Box sx={{ width: '80%', background: '#F8F7FD' }}>
+            <Box sx={{ width: '80%', background: '#F8F7FD', position: 'absolute', right: '0' }}>
                 <header style={{ width: '100%', padding: '30px', }} >
                     <Stack sx={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}>
                         <Box>
